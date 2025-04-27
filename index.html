@@ -389,29 +389,21 @@
 
 <div class="footer-form">
 <p class="footer-form-text">Subscribe</p>
-<ul class="ftr-list">
 
-  <li>
-    <form>
-      <label>
+<form class="subscribe">
+
+      <label></label>
 <input type="email" class="input"   name="e-meil" placeholder="E-mail">
-</label>
-</form>
-</li>
-
-  <li>
-    <div class="button-svg">
+<div class="btn-svg">
 <button type="submit" class="footer-btn">Subscribe</button>
-<svg class="icon-btn" width="24" height="20">
+<svg class="icon-btn" width="24" height="24">
   <use href="./images/icons.svg#icon-frame"></use>
 </svg>
 </div>
-</li>
-
-
-
+</form>
 </div>
-</ul>
+
+
   </div>
 
 </footer>
@@ -427,7 +419,8 @@
 
 <form class="form-modal">
 
-  <label class="label" for="name">Name
+  <div class="form-field">
+  <label class="label" for="name">Name</label>
   <div class="modal-wrapper">
     <input class="modal-input" type="text" name="user_name" id="name" required>
 
@@ -435,19 +428,20 @@
     <use href="./images/icons.svg#icon-person"></use>
   </svg>
 </div>
+</div>
 
 
-</label>
 
-
-<label class="label" for="phone">Phone
+<div class="form-field">
+<label class="label" for="phone">Phone</label>
   <div class="modal-wrapper">
   <input class="modal-input" type="tel" name="user_tel" id="phone" required>
 <svg class="modal-svg" width="18" height="24">
   <use href="./images/icons.svg#icon-phone"></use>
 </svg>
   </div>
-</label>
+
+</div>
 
 
 
@@ -456,34 +450,33 @@
 
 
 
-
-
-<label class="label" for="email">Email
+<div class="form-field">
+<label class="label" for="email">Email</label>
   <div class="modal-wrapper">
 <input class="modal-input" type="email" name="e_mail" id="email" required>
 <svg class="modal-svg" width="18" height="24">
   <use href="./images/icons.svg#icon-email"></use>
 </svg>
 </div>
+</div>
 
-</label>
 
 
-<div class="modal-wrapper">
-<label class="label" for="coment">Comment
+<div class="input-textarea">
+<label class="label" for="coment">Comment</label>
 <textarea class="text-area" name="com" rows="100" id="coment" placeholder="Text input"></textarea>
 
 
-</label>
+
 </div>
 
 
 
 
 
-</form>
+
 <div class="checkbox">
-<input  class="visually-hidden" 
+<input  class="visually-hidden check" 
 type="checkbox"
  name="user_privacy"
   value="true"
@@ -502,7 +495,7 @@ I accept the terms and conditions of the
 </div>
 <button class="modal-btn" type="submit">Send</button>
 
-
+</form>
   </div>
 </div>
 
